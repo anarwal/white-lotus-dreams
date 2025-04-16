@@ -1,32 +1,28 @@
-/* White Lotus Dreams - Elegant Floral Theme */
-
-:root {
-  --lotus-white: #f8f8f5;
-  --blush-pink: #f8dce0;
-  --sage-green: #c9d5c4;
-  --gold-accent: #d4af37;
-  --text-dark: #333;
-  --text-muted: #666;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Georgia', serif;
-  background-color: var(--lotus-white);
-  color: var(--text-dark);
-  margin: 0;
-  padding: 0;
+  font-family: 'Lora', serif;
+  background-color: #F5F5F5; /* White Lotus White */
+  color: #333333; /* Dark Charcoal */
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
 }
 
 nav {
-  background-color: var(--sage-green);
-  padding: 1em;
+  background-color: #F1D28E; /* Golden Petal */
+  padding: 10px 0;
   text-align: center;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  list-style-type: none;
 }
 
 nav ul li {
@@ -35,106 +31,140 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--text-dark);
+  color: #333333; /* Dark Charcoal */
   text-decoration: none;
   font-weight: bold;
 }
 
+nav ul li a:hover {
+  color: #E8A9B5; /* Lotus Pink */
+}
+
 header {
-  background: var(--blush-pink);
+  background-color: #D6B8D5; /* Soft Lavender */
+  color: #fff;
+  padding: 50px 20px;
   text-align: center;
-  padding: 4em 2em;
 }
 
 header h1 {
-  font-size: 3em;
-  margin: 0;
+  font-size: 3rem;
 }
 
-.tagline {
-  font-size: 1.5em;
-  color: var(--text-muted);
+header .tagline {
+  font-size: 1.5rem;
+  color: #E8A9B5; /* Lotus Pink */
+  font-style: italic;
 }
 
 section {
-  padding: 3em 2em;
+  padding: 40px 20px;
+  margin: 20px 0;
 }
 
-h2 {
-  color: var(--gold-accent);
-  border-bottom: 1px solid var(--sage-green);
-  padding-bottom: 0.5em;
+section h2 {
+  font-size: 2.5rem;
+  color: #333333; /* Dark Charcoal */
 }
 
 ul {
-  padding-left: 1.2em;
+  list-style-type: none;
+}
+
+ul li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.gallery {
+  text-align: center;
 }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1em;
-  margin-top: 1em;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
 }
 
 .gallery-grid img {
   width: 100%;
-  border-radius: 10px;
+  height: auto;
+  border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 form {
   display: grid;
-  gap: 1em;
+  gap: 15px;
   max-width: 600px;
   margin: 0 auto;
   background-color: #fff;
-  padding: 2em;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 form label {
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
+  font-size: 1.1rem;
 }
 
-form input,
-form select,
-form textarea,
-form button {
-  padding: 0.6em;
-  margin-top: 0.3em;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1em;
+form input, form select, form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 form button {
-  background-color: var(--gold-accent);
+  background-color: #E8A9B5; /* Lotus Pink */
   color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  font-size: 1.2rem;
 }
 
 form button:hover {
-  background-color: #bfa534;
+  background-color: #F1D28E; /* Golden Petal */
 }
 
 footer {
-  background-color: var(--sage-green);
   text-align: center;
-  padding: 1em;
-  color: var(--text-muted);
+  background-color: #333333; /* Dark Charcoal */
+  color: #fff;
+  padding: 20px 0;
 }
 
-a {
-  color: var(--gold-accent);
-  text-decoration: none;
+footer p {
+  font-size: 1rem;
 }
 
-a:hover {
-  text-decoration: underline;
-}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
 
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header .tagline {
+    font-size: 1.2rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  form button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
