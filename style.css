@@ -17,34 +17,26 @@ body {
   color: var(--text);
 }
 
+/* Header Styling */
 header.site-header {
   background-color: var(--highlight);
-  text-align: center;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo {
-  height: 80px;
-}
-
-.site-header h1 {
-  font-family: var(--font-header);
-  font-size: 2.5rem;
-  margin: 0.5rem 0 0;
-}
-
-.tagline {
-  font-style: italic;
-  font-size: 1.2rem;
+header.site-header .logo {
+  height: 60px;
+  /* Adjust as needed; since the logo already includes the name, no extra text is shown */
 }
 
 .nav-menu {
   display: flex;
-  justify-content: center;
   gap: 1.5rem;
   list-style: none;
-  padding: 1rem 0 0;
   margin: 0;
+  padding: 0;
 }
 
 .nav-menu a {
@@ -58,22 +50,62 @@ header.site-header {
   color: var(--accent);
 }
 
-/* Section spacing adjusted for a cohesive flow */
+/* Section Styling */
 .section {
   padding: 2rem 1rem;
   background-color: var(--background);
 }
 
-/* Services List */
-.services-list {
+/* Services Section - New Card Layout */
+.services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1rem;
-  padding: 0;
-  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
-/* Inquiry Form */
+.service-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  margin-top: 0;
+  font-family: var(--font-header);
+}
+
+.service-card p {
+  margin: 0.5rem 0 0;
+  line-height: 1.4;
+}
+
+/* Gallery Slider Styles */
+.slider-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.swiper-container {
+  padding: 1rem 0;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Inquiry Form Styles */
 .inquiry-form {
   background-color: var(--form-bg);
   padding: 2rem;
@@ -115,24 +147,7 @@ header.site-header {
   background-color: #a578a5;
 }
 
-/* Gallery Slider Styles */
-.slider-container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.swiper-container {
-  padding: 1rem 0;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
-}
-
-/* Footer */
+/* Footer Styling */
 footer {
   background-color: var(--highlight);
   text-align: center;
