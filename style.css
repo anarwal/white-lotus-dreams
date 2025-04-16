@@ -64,14 +64,18 @@ header.site-header .logo {
 }
 
 /* Services Widgets Styling */
+/* Updated Services Widgets Styling for Proper Alignment */
 .services-widgets {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* For desktops: 3 columns; adjust gap and maximum width as needed */
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  margin-top: 1rem;
+  max-width: 1200px;
+  margin: 1rem auto; /* Center the grid horizontally */
   text-align: center;
 }
 
+/* Each widget – minimal styling to keep title on top and description below */
 .service-widget {
   padding: 1rem;
   background-color: var(--section-bg);
@@ -92,6 +96,21 @@ header.site-header .logo {
 .service-widget p {
   margin: 0;
   font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+/* For tablets and medium screens */
+@media (max-width: 768px) {
+  .services-widgets {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .services-widgets {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Gallery Slider Styles */
@@ -175,3 +194,20 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+
+.gallery-instagram-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.gallery-instagram-link a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.gallery-instagram-link a:hover {
+  text-decoration: underline;
+}
+
