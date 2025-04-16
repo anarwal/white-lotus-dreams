@@ -1,4 +1,6 @@
-/* Color Palette: Soft white lotus tones */
+/*------------------------------------------------------------------
+  Root Variables & Basic Styling
+------------------------------------------------------------------*/
 :root {
   --background: #fff8f4;
   --accent: #c8a2c8;
@@ -10,25 +12,35 @@
   --font-body: 'Poppins', sans-serif;
 }
 
-/* Basic Styling */
 body {
   margin: 0;
   font-family: var(--font-body);
   background-color: var(--background);
   color: var(--text);
+  line-height: 1.6;
 }
 
-/* Header Styling */
-header.site-header {
+/*------------------------------------------------------------------
+  Header & Navigation
+------------------------------------------------------------------*/
+header {
   background-color: var(--highlight);
-  padding: 1.5rem 1rem;
+  padding: 1rem 2%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header.site-header .logo {
-  height: 60px;
+.logo img {
+  height: 50px;
+  /* The logo image is assumed to include your branding */
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .nav-menu {
@@ -42,7 +54,7 @@ header.site-header .logo {
 .nav-menu a {
   text-decoration: none;
   color: var(--text);
-  font-weight: bold;
+  font-weight: 500;
   transition: color 0.3s ease;
 }
 
@@ -50,14 +62,53 @@ header.site-header .logo {
   color: var(--accent);
 }
 
-/* Section Styling */
+/*------------------------------------------------------------------
+  Hero Section (Full-Width Background Image)
+------------------------------------------------------------------*/
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background: url('images/hero-bg.jpg') no-repeat center center/cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 248, 244, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero-overlay h1 {
+  font-family: var(--font-header);
+  font-size: 3rem;
+  margin: 0 0 0.5rem;
+  color: var(--text);
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  margin: 0;
+  color: var(--text);
+}
+
+/*------------------------------------------------------------------
+  Section Styling & Horizontal Dividers
+------------------------------------------------------------------*/
 .section {
-  padding: 2rem 1rem;
+  padding: 2rem 2%;
   background-color: var(--background);
   position: relative;
 }
 
-/* Add horizontal line after each section */
 .section::after {
   content: "";
   display: block;
@@ -66,7 +117,19 @@ header.site-header .logo {
   margin-top: 2rem;
 }
 
-/* Services Widgets Styling */
+/*------------------------------------------------------------------
+  About, Inquiry, & Contact Text Styling
+------------------------------------------------------------------*/
+.section h2 {
+  font-family: var(--font-header);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/*------------------------------------------------------------------
+  Services Widgets (3 per row on desktop, responsive)
+------------------------------------------------------------------*/
 .services-widgets {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -98,7 +161,6 @@ header.site-header .logo {
   font-size: 0.9rem;
 }
 
-/* Responsive adjustments for Services Widgets */
 @media (max-width: 768px) {
   .services-widgets {
     grid-template-columns: repeat(2, 1fr);
@@ -111,7 +173,9 @@ header.site-header .logo {
   }
 }
 
-/* Gallery Slider Styles */
+/*------------------------------------------------------------------
+  Gallery Slider & Instagram Call-to-Action
+------------------------------------------------------------------*/
 .slider-container {
   width: 90%;
   max-width: 1200px;
@@ -128,7 +192,6 @@ header.site-header .logo {
   border-radius: 0.5rem;
 }
 
-/* Gallery Instagram Call-to-Action */
 .gallery-instagram-link {
   text-align: center;
   margin-top: 1rem;
@@ -145,7 +208,9 @@ header.site-header .logo {
   text-decoration: underline;
 }
 
-/* Inquiry Form Styles */
+/*------------------------------------------------------------------
+  Inquiry Form Styling
+------------------------------------------------------------------*/
 .inquiry-form {
   background-color: var(--form-bg);
   padding: 2rem;
@@ -187,7 +252,9 @@ header.site-header .logo {
   background-color: #a578a5;
 }
 
-/* Footer Styling */
+/*------------------------------------------------------------------
+  Footer Styling
+------------------------------------------------------------------*/
 footer {
   background-color: var(--highlight);
   text-align: center;
