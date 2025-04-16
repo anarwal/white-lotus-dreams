@@ -1,3 +1,6 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lora&display=swap');
+
 /* General Reset */
 * {
   margin: 0;
@@ -7,8 +10,8 @@
 
 body {
   font-family: 'Lora', serif;
-  background-color: #F5F5F5; /* White Lotus White */
-  color: #333333; /* Dark Charcoal */
+  background-color: #F5F5F5; /* Lotus White */
+  color: #333333; /* Charcoal Gray */
 }
 
 h1, h2 {
@@ -16,7 +19,7 @@ h1, h2 {
 }
 
 nav {
-  background-color: #F1D28E; /* Golden Petal */
+  background-color: #F1D28E; /* Golden Sand */
   padding: 10px 0;
   text-align: center;
 }
@@ -31,13 +34,13 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #333333; /* Dark Charcoal */
+  color: #333333; /* Charcoal Gray */
   text-decoration: none;
   font-weight: bold;
 }
 
 nav ul li a:hover {
-  color: #E8A9B5; /* Lotus Pink */
+  color: #E8A9B5; /* Blush Pink */
 }
 
 header {
@@ -53,7 +56,7 @@ header h1 {
 
 header .tagline {
   font-size: 1.5rem;
-  color: #E8A9B5; /* Lotus Pink */
+  color: #E8A9B5; /* Blush Pink */
   font-style: italic;
 }
 
@@ -64,7 +67,7 @@ section {
 
 section h2 {
   font-size: 2.5rem;
-  color: #333333; /* Dark Charcoal */
+  color: #333333; /* Charcoal Gray */
 }
 
 ul {
@@ -116,7 +119,7 @@ form input, form select, form textarea {
 }
 
 form button {
-  background-color: #E8A9B5; /* Lotus Pink */
+  background-color: #E8A9B5; /* Blush Pink */
   color: #fff;
   padding: 10px;
   border: none;
@@ -126,12 +129,12 @@ form button {
 }
 
 form button:hover {
-  background-color: #F1D28E; /* Golden Petal */
+  background-color: #F1D28E; /* Golden Sand */
 }
 
 footer {
   text-align: center;
-  background-color: #333333; /* Dark Charcoal */
+  background-color: #333333; /* Charcoal Gray */
   color: #fff;
   padding: 20px 0;
 }
