@@ -44,7 +44,7 @@ header.site-header {
   gap: 1.5rem;
   list-style: none;
   padding: 1rem 0 0;
-  margin: 0; /* Ensure no extra spacing */
+  margin: 0;
 }
 
 .nav-menu a {
@@ -58,13 +58,10 @@ header.site-header {
   color: var(--accent);
 }
 
-/* Removed the hero section */
-
-/* Adjusted section spacing to reduce visual breaks */
+/* Section spacing adjusted for a cohesive flow */
 .section {
   padding: 2rem 1rem;
   background-color: var(--background);
-  /* Optionally remove bottom borders/margins if present */
 }
 
 /* Services List */
@@ -115,7 +112,7 @@ header.site-header {
 }
 
 .inquiry-form button:hover {
-  background-color: #a578a5; /* Slightly darker shade for hover effect */
+  background-color: #a578a5;
 }
 
 /* Gallery Slider Styles */
