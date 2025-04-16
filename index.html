@@ -3,22 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="White Lotus Dreams - Elegant Event Planning and Floral Arrangements" />
+  <meta name="description" content="White Lotus Dreams - Elegant Event Planning & Floral Design" />
   <title>White Lotus Dreams | Elegant Event Planning & Floral Design</title>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins:400,500,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Poppins:400,500,600&display=swap" rel="stylesheet" />
   <!-- Main CSS -->
   <link rel="stylesheet" href="style.css" />
-  <!-- Swiper CSS for slider -->
+  <!-- Swiper CSS for the slider -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <!-- Lightbox CSS for zoom effect -->
+  <!-- Lightbox CSS for image zoom effect -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
 </head>
 <body>
+
+  <!-- Header Section -->
   <header class="site-header">
-    <!-- Logo acting as a link (logo includes the company name) -->
-    <a href="#about"><img src="logo.png" alt="White Lotus Dreams Logo" class="logo" /></a>
-    <nav>
+    <!-- The logo image includes your branding -->
+    <a href="#about" class="logo">
+      <img src="images/white-lotus-logo.png" alt="White Lotus Dreams Logo" />
+    </a>
+    <nav class="site-nav">
       <ul class="nav-menu">
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
@@ -29,18 +33,28 @@
     </nav>
   </header>
 
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay">
+      <h1>White Lotus Dreams</h1>
+      <p>Turning Moments Into Memories</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
   <main>
     <section id="about" class="section">
       <h2>About Us</h2>
-      <p>White Lotus Dreams is a boutique event planning company that specializes in elegant, floral-inspired events. Our passion is transforming your dreams into reality with personal attention and timeless design.</p>
+      <p>White Lotus Dreams is a boutique event planning company specializing in elegant, floral‐inspired events. Our passion is transforming your dreams into reality with personal attention and timeless design.</p>
     </section>
 
+    <!-- Services Section with Widget-Style Layout -->
     <section id="services" class="section">
       <h2>Our Services</h2>
       <div class="services-widgets">
         <div class="service-widget">
           <h3>Birthday Parties</h3>
-          <p>Celebrate milestones with vibrant, personalized party planning.</p>
+          <p>Celebrate milestones with personalized party planning.</p>
         </div>
         <div class="service-widget">
           <h3>Anniversaries</h3>
@@ -48,15 +62,15 @@
         </div>
         <div class="service-widget">
           <h3>Kids Parties</h3>
-          <p>Fun, imaginative events designed to delight both kids and families.</p>
+          <p>Fun, imaginative events to delight both kids and families.</p>
         </div>
         <div class="service-widget">
           <h3>Bridal Showers</h3>
-          <p>Romantic touches and floral accents to elevate bridal showers.</p>
+          <p>Romantic touches and floral accents that elevate bridal showers.</p>
         </div>
         <div class="service-widget">
           <h3>Charity Events</h3>
-          <p>Professional planning that helps support meaningful causes.</p>
+          <p>Professional planning that supports meaningful causes.</p>
         </div>
         <div class="service-widget">
           <h3>Corporate Events</h3>
@@ -68,55 +82,55 @@
         </div>
         <div class="service-widget">
           <h3>Weddings</h3>
-          <p>Every detail crafted with love for intimate or grand celebrations.</p>
+          <p>Every detail crafted with love for both intimate and grand celebrations.</p>
         </div>
         <div class="service-widget">
           <h3>Floral Arrangements</h3>
-          <p>Custom designs to add an artistic flourish to any event.</p>
+          <p>Custom designs adding an artistic flourish to any event.</p>
         </div>
       </div>
     </section>
 
-    <!-- Updated Gallery Section -->
+    <!-- Gallery Section with Slider & Instagram Call-to-Action -->
     <section id="gallery" class="section">
       <h2>Gallery</h2>
       <div class="slider-container">
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <!-- Replace with your own images and update the paths as needed -->
+            <!-- Replace with your own images and update paths accordingly -->
             <div class="swiper-slide">
-              <a href="images/image1.jpg" data-lightbox="gallery" data-title="Gallery_Image_1">
-                <img src="images/image1.jpg" alt="Gallery_Image_1" />
+              <a href="images/gallery1.jpg" data-lightbox="gallery" data-title="Gallery Image 1">
+                <img src="images/gallery1.jpg" alt="Gallery Image 1" />
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="images/image2.jpg" data-lightbox="gallery" data-title="Gallery_Image_2">
-                <img src="images/image2.jpg" alt="Gallery_Image_2" />
+              <a href="images/gallery2.jpg" data-lightbox="gallery" data-title="Gallery Image 2">
+                <img src="images/gallery2.jpg" alt="Gallery Image 2" />
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="images/image3.jpg" data-lightbox="gallery" data-title="Gallery_Image_3">
-                <img src="images/image3.jpg" alt="Gallery_Image_3" />
+              <a href="images/gallery3.jpg" data-lightbox="gallery" data-title="Gallery Image 3">
+                <img src="images/gallery3.jpg" alt="Gallery Image 3" />
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="images/image4.jpg" data-lightbox="gallery" data-title="Gallery_Image_4">
-                <img src="images/image4.jpg" alt="Gallery_Image_4" />
+              <a href="images/gallery4.jpg" data-lightbox="gallery" data-title="Gallery Image 4">
+                <img src="images/gallery4.jpg" alt="Gallery Image 4" />
               </a>
             </div>
-            <!-- Add additional slides as needed -->
+            <!-- Add more slides as needed -->
           </div>
-          <!-- Navigation arrows -->
+          <!-- Slider Navigation Arrows -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
       </div>
-      <!-- Instagram Call-to-Action -->
       <p class="gallery-instagram-link">
-        Follow us on <a href="https://www.instagram.com/white_lotus_dreams" target="_blank" rel="noopener noreferrer">Instagram</a> for more pictures.
+        Follow us on <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">Instagram</a> for more pictures.
       </p>
     </section>
 
+    <!-- Inquiry Section -->
     <section id="inquiry" class="section">
       <h2>Rental & Event Inquiry</h2>
       <form class="inquiry-form">
@@ -153,6 +167,7 @@
       </form>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="section">
       <h2>Contact Us</h2>
       <p>We'd love to hear from you! Follow us on Instagram or send us a message.</p>
@@ -160,28 +175,29 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 White Lotus Dreams. All rights reserved.</p>
   </footer>
 
-  <!-- Swiper JS for slider functionality -->
+  <!-- Include Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <!-- Lightbox JS for zoom effect -->
+  <!-- Include Lightbox JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
   <script>
-    // Initialize Swiper slider
+    // Initialize Swiper Slider
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
       spaceBetween: 10,
       navigation: {
         nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        prevEl: '.swiper-button-prev'
       },
       breakpoints: {
         640: { slidesPerView: 2 },
         768: { slidesPerView: 3 },
-        1024: { slidesPerView: 4 },
-      },
+        1024: { slidesPerView: 4 }
+      }
     });
   </script>
 </body>
