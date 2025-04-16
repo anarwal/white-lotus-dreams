@@ -28,7 +28,6 @@ header.site-header {
 
 header.site-header .logo {
   height: 60px;
-  /* Adjust as needed; since the logo already includes the name, no extra text is shown */
 }
 
 .nav-menu {
@@ -56,36 +55,43 @@ header.site-header .logo {
   background-color: var(--background);
 }
 
-/* Services Section - New Card Layout */
-.services-grid {
+.section::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid var(--accent); /* You can change this color as needed */
+  margin-top: 2rem;
+}
+
+/* Services Widgets Styling */
+.services-widgets {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   margin-top: 1rem;
+  text-align: center;
 }
 
-.service-card {
-  background: #fff;
-  border: 1px solid #eee;
-  border-radius: 0.5rem;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.service-widget {
+  padding: 1rem;
+  background-color: var(--section-bg);
+  border-radius: 5px;
+  transition: transform 0.3s ease;
 }
 
-.service-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+.service-widget:hover {
+  transform: translateY(-3px);
 }
 
-.service-card h3 {
-  margin-top: 0;
+.service-widget h3 {
+  margin-bottom: 0.5rem;
   font-family: var(--font-header);
+  font-size: 1.2rem;
 }
 
-.service-card p {
-  margin: 0.5rem 0 0;
-  line-height: 1.4;
+.service-widget p {
+  margin: 0;
+  font-size: 0.9rem;
 }
 
 /* Gallery Slider Styles */
@@ -103,6 +109,13 @@ header.site-header .logo {
   width: 100%;
   height: auto;
   border-radius: 0.5rem;
+}
+.section::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid var(--accent); /* You can change this color as needed */
+  margin-top: 2rem;
 }
 
 /* Inquiry Form Styles */
@@ -145,6 +158,14 @@ header.site-header .logo {
 
 .inquiry-form button:hover {
   background-color: #a578a5;
+}
+
+.section::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid var(--accent); /* You can change this color as needed */
+  margin-top: 2rem;
 }
 
 /* Footer Styling */
