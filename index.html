@@ -7,8 +7,8 @@
   <meta name="keywords" content="Event Planning, Floral Design, Weddings, Birthdays, Baby Showers, White Lotus Dreams" />
   <meta name="author" content="White Lotus Dreams" />
   <title>White Lotus Dreams | Elegant Event Planning & Floral Design</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
@@ -49,12 +49,20 @@
 
   <section class="gallery">
     <h2>Gallery</h2>
-    <p>Follow us on <a href="${instagram-profile}" target="_blank">Instagram</a> to see our latest creations.</p>
+    <p>Follow us on <a href="https://www.instagram.com/white_lotus_dreams/" target="_blank">Instagram</a> to see our latest creations.</p>
     <div class="gallery-grid">
-      <img src="images/birthday_setup.jpg" alt="Birthday setup" />
-      <img src="images/bridal_shower_flowers.jpg" alt="Wedding decor" />
-      <img src="images/elegant_dinner.jpg" alt="Bridal shower flowers" />
-      <img src="images/wedding_decor.jpg" alt="Elegant dinner layout" />
+      <a href="images/birthday_setup.jpg" class="lightbox">
+        <img src="images/birthday_setup.jpg" alt="Birthday setup" />
+      </a>
+      <a href="images/bridal_shower_flowers.jpg" class="lightbox">
+        <img src="images/bridal_shower_flowers.jpg" alt="Wedding decor" />
+      </a>
+      <a href="images/elegant_dinner.jpg" class="lightbox">
+        <img src="images/elegant_dinner.jpg" alt="Bridal shower flowers" />
+      </a>
+      <a href="images/wedding_decor.jpg" class="lightbox">
+        <img src="images/wedding_decor.jpg" alt="Elegant dinner layout" />
+      </a>
     </div>
   </section>
 
@@ -109,5 +117,9 @@
   <footer>
     <p>&copy; 2025 White Lotus Dreams. All rights reserved.</p>
   </footer>
+
+  <!-- Lightbox JS -->
+  <script src="lightbox.min.js"></script>
 </body>
 </html>
+
