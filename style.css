@@ -44,25 +44,30 @@ header.site-header {
   gap: 1.5rem;
   list-style: none;
   padding: 1rem 0 0;
+  margin: 0; /* Ensure no extra spacing */
 }
 
 .nav-menu a {
   text-decoration: none;
   color: var(--text);
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-.hero {
-  text-align: center;
-  padding: 3rem 1rem;
-  background-color: var(--section-bg);
+.nav-menu a:hover {
+  color: var(--accent);
 }
 
+/* Removed the hero section */
+
+/* Adjusted section spacing to reduce visual breaks */
 .section {
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   background-color: var(--background);
+  /* Optionally remove bottom borders/margins if present */
 }
 
+/* Services List */
 .services-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -71,6 +76,7 @@ header.site-header {
   list-style: none;
 }
 
+/* Inquiry Form */
 .inquiry-form {
   background-color: var(--form-bg);
   padding: 2rem;
@@ -105,8 +111,31 @@ header.site-header {
   border-radius: 0.5rem;
   font-size: 1rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.inquiry-form button:hover {
+  background-color: #a578a5; /* Slightly darker shade for hover effect */
+}
+
+/* Gallery Slider Styles */
+.slider-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.swiper-container {
+  padding: 1rem 0;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Footer */
 footer {
   background-color: var(--highlight);
   text-align: center;
