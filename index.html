@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="White Lotus Dreams - Elegant Event Planning and Floral Arrangements" />
   <title>White Lotus Dreams | Elegant Event Planning & Floral Design</title>
-  <!-- Optionally load Google Fonts if not already loaded -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins:400,500,600&display=swap" rel="stylesheet" />
   <!-- Main CSS -->
   <link rel="stylesheet" href="style.css" />
   <!-- Swiper CSS for slider -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <!-- Lightbox CSS (for zoom feature) -->
+  <!-- Lightbox CSS for zoom effect -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
 </head>
 <body>
@@ -32,7 +32,6 @@
   </header>
 
   <main>
-    <!-- Removed the home/hero section -->
     <section id="about" class="section">
       <h2>About Us</h2>
       <p>White Lotus Dreams is a boutique event planning company that specializes in elegant, floral-inspired events. Our passion is transforming your dreams into reality with personal attention and timeless design.</p>
@@ -53,13 +52,34 @@
       </ul>
     </section>
 
-    <!-- New Gallery Section -->
+    <!-- New Gallery Section with manual uploaded images -->
     <section id="gallery" class="section">
       <h2>Gallery</h2>
       <div class="slider-container">
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <!-- Instagram images will be dynamically injected here -->
+            <!-- Replace with your own images and update the paths as needed -->
+            <div class="swiper-slide">
+              <a href="images/gallery1.jpg" data-lightbox="gallery" data-title="Gallery Image 1">
+                <img src="images/gallery1.jpg" alt="Gallery Image 1" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="images/gallery2.jpg" data-lightbox="gallery" data-title="Gallery Image 2">
+                <img src="images/gallery2.jpg" alt="Gallery Image 2" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="images/gallery3.jpg" data-lightbox="gallery" data-title="Gallery Image 3">
+                <img src="images/gallery3.jpg" alt="Gallery Image 3" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="images/gallery4.jpg" data-lightbox="gallery" data-title="Gallery Image 4">
+                <img src="images/gallery4.jpg" alt="Gallery Image 4" />
+              </a>
+            </div>
+            <!-- Add additional slides as needed -->
           </div>
           <!-- Navigation arrows for the slider -->
           <div class="swiper-button-prev"></div>
@@ -119,44 +139,29 @@
 
   <!-- Swiper JS for the slider -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <!-- Instafeed JS to fetch Instagram photos -->
-  <script src="https://unpkg.com/instafeed.js@2.0.0"></script>
-  <!-- Lightbox JS for image zoom -->
+  <!-- Lightbox JS for zoom effect -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
   <script>
-    // Replace these placeholders with your actual Instagram user ID and access token.
-    var feed = new Instafeed({
-      get: 'user',
-      userId: 'YOUR_USER_ID',
-      accessToken: 'YOUR_ACCESS_TOKEN',
-      limit: 9,
-      template: '<div class="swiper-slide"><a href="{{image}}" data-lightbox="gallery" data-title="{{caption}}"><img src="{{image}}" alt="{{caption}}" /></a></div>'
+    // Initialize Swiper slider
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+      },
     });
-    feed.run();
-
-    // Initialize the Swiper slider once Instafeed has injected your images
-    // A small delay might be necessary to ensure that the images are available before the slider is initialized.
-    setTimeout(function() {
-      var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-          640: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 3,
-          },
-          1024: {
-            slidesPerView: 4,
-          },
-        },
-      });
-    }, 1000); // Adjust timing as needed
   </script>
 </body>
 </html>
