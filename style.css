@@ -23,7 +23,7 @@ body {
 /*------------------------------------------------------------------
   Header & Navigation
 ------------------------------------------------------------------*/
-header {
+.site-header {
   background-color: var(--highlight);
   padding: 1rem 2%;
   display: flex;
@@ -33,14 +33,11 @@ header {
 
 .logo img {
   height: 50px;
-  /* The logo image is assumed to include your branding */
 }
 
 .site-nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 
 .nav-menu {
@@ -63,7 +60,7 @@ header {
 }
 
 /*------------------------------------------------------------------
-  Hero Section (Full-Width Background Image)
+  Hero Section
 ------------------------------------------------------------------*/
 .hero-section {
   position: relative;
@@ -101,7 +98,7 @@ header {
 }
 
 /*------------------------------------------------------------------
-  Section Styling & Horizontal Dividers
+  Section Styling & Dividers
 ------------------------------------------------------------------*/
 .section {
   padding: 2rem 2%;
@@ -117,9 +114,6 @@ header {
   margin-top: 2rem;
 }
 
-/*------------------------------------------------------------------
-  About, Inquiry, & Contact Text Styling
-------------------------------------------------------------------*/
 .section h2 {
   font-family: var(--font-header);
   font-size: 2rem;
@@ -128,7 +122,7 @@ header {
 }
 
 /*------------------------------------------------------------------
-  Services Widgets (3 per row on desktop, responsive)
+  Services Widgets Styling
 ------------------------------------------------------------------*/
 .services-widgets {
   display: grid;
@@ -174,7 +168,7 @@ header {
 }
 
 /*------------------------------------------------------------------
-  Gallery Slider & Instagram Call-to-Action
+  Gallery Slider & Instagram CTA
 ------------------------------------------------------------------*/
 .slider-container {
   width: 90%;
