@@ -16,12 +16,10 @@
 </head>
 <body>
   <header class="site-header">
-    <img src="logo.png" alt="White Lotus Dreams Logo" class="logo" />
-    <h1>White Lotus Dreams</h1>
-    <p class="tagline">Turning Moments Into Memories</p>
+    <!-- The logo now acts as a link (logo includes the company name) -->
+    <a href="#about"><img src="logo.png" alt="White Lotus Dreams Logo" class="logo" /></a>
     <nav>
       <ul class="nav-menu">
-        <!-- Removed Home link -->
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#gallery">Gallery</a></li>
@@ -39,20 +37,47 @@
 
     <section id="services" class="section">
       <h2>Our Services</h2>
-      <ul class="services-list">
-        <li>Birthday Parties</li>
-        <li>Anniversaries</li>
-        <li>Kids Parties</li>
-        <li>Bridal Showers</li>
-        <li>Charity Events</li>
-        <li>Corporate Events</li>
-        <li>Gender Reveals</li>
-        <li>Weddings</li>
-        <li>Floral Arrangements</li>
-      </ul>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Birthday Parties</h3>
+          <p>Celebrate milestones with vibrant, personalized party planning and artistic floral designs.</p>
+        </div>
+        <div class="service-card">
+          <h3>Anniversaries</h3>
+          <p>Create memorable anniversary celebrations with elegant décor and thoughtful details.</p>
+        </div>
+        <div class="service-card">
+          <h3>Kids Parties</h3>
+          <p>Fun and imaginative events that engage children and delight families.</p>
+        </div>
+        <div class="service-card">
+          <h3>Bridal Showers</h3>
+          <p>Bring a fresh and romantic touch to bridal shower celebrations with floral accents.</p>
+        </div>
+        <div class="service-card">
+          <h3>Charity Events</h3>
+          <p>Elegant event planning that helps you support meaningful causes.</p>
+        </div>
+        <div class="service-card">
+          <h3>Corporate Events</h3>
+          <p>Professional yet creative solutions for business events and product launches.</p>
+        </div>
+        <div class="service-card">
+          <h3>Gender Reveals</h3>
+          <p>Innovative ideas to add joy and surprise to your gender reveal moments.</p>
+        </div>
+        <div class="service-card">
+          <h3>Weddings</h3>
+          <p>From intimate ceremonies to grand celebrations, every detail is crafted with love.</p>
+        </div>
+        <div class="service-card">
+          <h3>Floral Arrangements</h3>
+          <p>Custom floral designs that add an artistic flourish to any occasion.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- New Gallery Section with manual uploaded images -->
+    <!-- Gallery Section with a slider for your manually uploaded images -->
     <section id="gallery" class="section">
       <h2>Gallery</h2>
       <div class="slider-container">
@@ -81,7 +106,7 @@
             </div>
             <!-- Add additional slides as needed -->
           </div>
-          <!-- Navigation arrows for the slider -->
+          <!-- Navigation arrows -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
@@ -100,7 +125,6 @@
             <option value="NYC">New York City</option>
             <option value="LA">Los Angeles</option>
             <option value="SF">San Francisco</option>
-            <!-- Add more -->
           </select>
         </label>
         <label>Event Date: <input type="date" name="event_date" required /></label>
@@ -115,7 +139,6 @@
             <option value="birthday">Birthday</option>
             <option value="wedding">Wedding</option>
             <option value="corporate">Corporate</option>
-            <!-- Add more -->
           </select>
         </label>
         <label>Upload Inspiration Photo: <input type="file" name="inspiration" accept="image/*" /></label>
@@ -137,7 +160,7 @@
     <p>&copy; 2025 White Lotus Dreams. All rights reserved.</p>
   </footer>
 
-  <!-- Swiper JS for the slider -->
+  <!-- Swiper JS for slider functionality -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- Lightbox JS for zoom effect -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
@@ -151,15 +174,9 @@
         prevEl: '.swiper-button-prev',
       },
       breakpoints: {
-        640: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        1024: {
-          slidesPerView: 4,
-        },
+        640: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        1024: { slidesPerView: 4 },
       },
     });
   </script>
